@@ -22,11 +22,25 @@ h2 {
   justify-content: center;
   height: 100vh;
 }
+.sun {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+.sunbox {
+  width: 100px;
+  height: 24px;
+  margin-left: 40px;
+  border-radius: 10px;
+  background-color: rgb(53, 53, 53);
+}
 
 .calculator {
   width: 350px;
   height: auto;
-  /* padding: 40px 0px; */
   border-radius: 10px;
   background-color: rgb(177, 177, 177);
   text-align: center;
@@ -47,17 +61,15 @@ h2 {
 .topwrap {
   border-radius: 10px 10px 0 0;
   background-color: rgb(105, 105, 105);
-  padding-top: 15px;
 }
 .click__btns {
   width: 100%;
 }
 
 h4 {
-  margin-bottom: 5px;
-  text-align: right;
   margin-right: 40px;
   color: #eaebe4;
+  text-align: right;
 }
 /* ---------버튼------------ */
 
