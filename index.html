@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="calculator">
+        <input
+          id="viewScreen"
+          type="text"
+          onclick="addInput(this.value)"
+          value="0"
+        />
+        <div class="calculator__click--area">
+          <div class="click__btns">
+            <input
+              type="reset"
+              id="clear"
+              onclick="clearviewScreen()"
+              value="C"
+            />
+            <input id="del" type="button" onclick="backward()" value="del" />
+            <input
+              id="divi"
+              type="button"
+              onclick="addInput(this.value)"
+              value="/"
+            />
+          </div>
+          <div class="click__btns">
+            <input
+              id="seven"
+              type="button"
+              onclick="addInput(this.value)"
+              value="7"
+            />
+            <input
+              id="eight"
+              type="button"
+              onclick="addInput(this.value)"
+              value="8"
+            />
+            <input
+              id="nine"
+              type="button"
+              onclick="addInput(this.value)"
+              value="9"
+            />
+            <input
+              id="x"
+              type="button"
+              onclick="addInput(this.value)"
+              value="*"
+            />
+          </div>
+          <div class="click__btns">
+            <input
+              id="four"
+              type="button"
+              onclick="addInput(this.value)"
+              value="4"
+            />
+            <input
+              id="five"
+              type="button"
+              onclick="addInput(this.value)"
+              value="5"
+            />
+            <input
+              id="six"
+              type="button"
+              onclick="addInput(this.value)"
+              value="6"
+            />
+            <input
+              id="min"
+              type="button"
+              onclick="addInput(this.value)"
+              value="-"
+            />
+          </div>
+          <div class="click__btns">
+            <input
+              id="one"
+              type="button"
+              onclick="addInput(this.value)"
+              value="1"
+            />
+            <input
+              id="two"
+              type="button"
+              onclick="addInput(this.value)"
+              value="2"
+            />
+            <input
+              id="three"
+              type="button"
+              onclick="addInput(this.value)"
+              value="3"
+            />
+            <input
+              id="plus"
+              type="button"
+              onclick="addInput(this.value)"
+              value="+"
+            />
+          </div>
+          <div class="click__btns">
+            <input
+              id="zero"
+              type="button"
+              onclick="addInput(this.value)"
+              value="0"
+            />
+            <input
+              id="dot"
+              type="button"
+              onclick="addInput(this.value)"
+              value="."
+            />
+            <input id="result" type="button" onclick="calculate()" value="=" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+body {
+  overflow: hidden;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calculator {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  background-color: rgb(177, 177, 177);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#viewScreen {
+  width: calc(50% - 10px);
+  height: 100px;
+  margin: 0 auto 5px auto;
+  background-color: #eaebe4;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* ---------버튼------------ */
+input {
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #eaebe4;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+#clear {
+  width: 125px;
+}
+#result {
+  width: 125px;
+}
+.click__btns > input:hover {
+  border: none;
+  background-color: #eaebe4;
+  color: #c33949;
+}
+
+.click__btns > input:active {
+  border: none;
+  background-color: #c33949;
+  color: #eaebe4;
+}
+
+input {
+  outline: none;
+}
