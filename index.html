@@ -13,116 +13,41 @@
         <input
           id="viewScreen"
           type="text"
-          onclick="addInput(this.value)"
+          onclick="number(this.value)"
           value="0"
         />
         <div class="calculator__click--area">
           <div class="click__btns">
             <input
-              type="reset"
+              type="button"
               id="clear"
               onclick="clearviewScreen()"
               value="C"
             />
-            <input id="del" type="button" onclick="backward()" value="del" />
-            <input
-              id="divi"
-              type="button"
-              onclick="addInput(this.value)"
-              value="/"
-            />
+            <input id="del" type="button" onclick="del()" value="del" />
+            <input type="button" onclick="number(this.value)" value="/" />
           </div>
           <div class="click__btns">
-            <input
-              id="seven"
-              type="button"
-              onclick="addInput(this.value)"
-              value="7"
-            />
-            <input
-              id="eight"
-              type="button"
-              onclick="addInput(this.value)"
-              value="8"
-            />
-            <input
-              id="nine"
-              type="button"
-              onclick="addInput(this.value)"
-              value="9"
-            />
-            <input
-              id="x"
-              type="button"
-              onclick="addInput(this.value)"
-              value="*"
-            />
+            <input type="button" onclick="number(this.value)" value="7" />
+            <input type="button" onclick="number(this.value)" value="8" />
+            <input type="button" onclick="number(this.value)" value="9" />
+            <input type="button" onclick="number(this.value)" value="*" />
           </div>
           <div class="click__btns">
-            <input
-              id="four"
-              type="button"
-              onclick="addInput(this.value)"
-              value="4"
-            />
-            <input
-              id="five"
-              type="button"
-              onclick="addInput(this.value)"
-              value="5"
-            />
-            <input
-              id="six"
-              type="button"
-              onclick="addInput(this.value)"
-              value="6"
-            />
-            <input
-              id="min"
-              type="button"
-              onclick="addInput(this.value)"
-              value="-"
-            />
+            <input type="button" onclick="number(this.value)" value="4" />
+            <input type="button" onclick="number(this.value)" value="5" />
+            <input type="button" onclick="number(this.value)" value="6" />
+            <input type="button" onclick="number(this.value)" value="-" />
           </div>
           <div class="click__btns">
-            <input
-              id="one"
-              type="button"
-              onclick="addInput(this.value)"
-              value="1"
-            />
-            <input
-              id="two"
-              type="button"
-              onclick="addInput(this.value)"
-              value="2"
-            />
-            <input
-              id="three"
-              type="button"
-              onclick="addInput(this.value)"
-              value="3"
-            />
-            <input
-              id="plus"
-              type="button"
-              onclick="addInput(this.value)"
-              value="+"
-            />
+            <input type="button" onclick="number(this.value)" value="1" />
+            <input type="button" onclick="number(this.value)" value="2" />
+            <input type="button" onclick="number(this.value)" value="3" />
+            <input type="button" onclick="number(this.value)" value="+" />
           </div>
           <div class="click__btns">
-            <input
-              id="zero"
-              type="button"
-              onclick="addInput(this.value)"
-              value="0"
-            />
-            <input
-              id="dot"
-              type="button"
-              onclick="addInput(this.value)"
-              value="."
-            />
+            <input type="button" onclick="number(this.value)" value="0" />
+            <input type="button" onclick="number(this.value)" value="." />
             <input id="result" type="button" onclick="calculate()" value="=" />
           </div>
         </div>
