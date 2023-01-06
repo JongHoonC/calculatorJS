@@ -1,6 +1,6 @@
+let viewScreen = document.getElementById("viewScreen");
 function number(num) {
-  let viewScreen = document.getElementById("viewScreen");
-  if (viewScreen.value == "0") {
+  if (viewScreen.value === "0") {
     viewScreen.value = num;
   } else {
     viewScreen.value += num;
@@ -8,7 +8,6 @@ function number(num) {
 }
 
 function del() {
-  let viewScreen = document.getElementById("viewScreen");
   let length = viewScreen.value.length;
   if (length === 0) {
     return;
@@ -19,12 +18,10 @@ function del() {
 
 // 계산
 function calculate() {
-  let viewScreen = document.getElementById("viewScreen");
   viewScreen.value = eval(viewScreen.value);
 }
 
 // clear
 function clearviewScreen() {
-  let viewScreen = document.getElementById("viewScreen");
   viewScreen.value = "0";
 }
