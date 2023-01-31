@@ -6,7 +6,7 @@ function number(num) {
     viewScreen.value += num;
   }
 }
-
+//
 function del() {
   let length = viewScreen.value.length;
   if (length === 0) {
